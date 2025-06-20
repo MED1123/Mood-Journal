@@ -1,16 +1,52 @@
-# mood_journal
+# 🧠 Mood Journal – Inteligentny dziennik nastroju
 
-A new Flutter project.
+Flutterowa aplikacja mobilna, która pozwala zapisywać codzienne wpisy nastrojów i analizować je za pomocą sztucznej inteligencji (GPT). Aplikacja sugeruje działania na podstawie emocji wykrytych w Twoich notatkach.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Funkcje
 
-A few resources to get you started if this is your first Flutter project:
+- ✍️ Wpisywanie nastroju w dzienniku
+- 🧠 Analiza wpisu za pomocą GPT (OpenRouter)
+- 🪄 Sugestie działania: relaks, motywacja, autorefleksja
+- 💾 Lokalna baza danych (SQLite/Hive – w trakcie integracji)
+- 🔐 Bezpieczne przechowywanie klucza API (`.env`)
+- 📱 Działa na Androidzie (planowane wsparcie dla iOS, watchOS)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🧪 Wersja MVP (Minimalny Produkt)
+
+| Funkcja                 | Status |
+|------------------------|--------|
+| Wpis tekstu            | ✅     |
+| Integracja z GPT       | ✅     |
+| Sugestie nastroju      | ✅     |
+| Baza lokalna           | 🔜     |
+| Historia wpisów        | 🔜     |
+| Połączenie z kalendarzem lub zdrowiem | 🔜     |
+
+---
+
+## 🧰 Stos technologiczny
+
+- **Flutter** – UI/UX aplikacji
+- **Dart** – logika
+- **OpenRouter** – alternatywa dla OpenAI API
+- **Dotenv** – przechowywanie klucza API
+- **SQLite / Hive** – lokalna baza danych (do integracji)
+
+---
+
+## 🛠️ Instalacja lokalna
+
+1. Sklonuj repozytorium:
+
+   ```bash
+   git clone https://github.com/TWOJ-LOGIN/mood_journal.git
+   cd mood_journal
+2. Dodaj plik .env z kluczem API
+3. Uruchom emulator lub podłącz urządzenie i uruchom aplikację:
+   Najpierw `flutter pub spec`.
+   A następnie aby uruchomić aplikację, użyj polecenia `flutter run`.
+
